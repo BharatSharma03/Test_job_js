@@ -1,0 +1,15 @@
+img{
+width:50px;
+margin-left:40px ;
+margin-top: 11.8px;
+}
+a{
+    display: flex;
+    flex-direction: row;
+    justify-content:  flex-end;
+    text-decoration: none;
+    color: black;
+    font-family:'arial';
+    font-weight: bold ;
+    font-size: small;
+}
