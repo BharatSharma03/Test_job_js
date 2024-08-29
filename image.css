@@ -1,15 +1,64 @@
+/* changes in images */
 img{
 width:50px;
 margin-left:40px ;
 margin-top: 11.8px;
 }
-a{
+/* header changes */
+header{
+    display:flex;
+    align-items: center;
+    margin: 0px;
+    padding: 10px;
+    justify-content: space-between;
+}
+/* changes in child class items  */
+nav .child{
     display: flex;
-    flex-direction: row;
-    justify-content:  flex-end;
+    list-style-type: none;
+    gap: 20px;
+    flex-direction:row;
+    justify-content: end;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+}
+nav .child li{
+    display: flex;
+    justify-content: flex-end;
+}
+/* hover for a content or hyperlink  */
+nav .child a:hover {
+    color: blue;
+}
+nav .child a:active {
+    color: red;
+}
+
+nav .child button:hover{
+    background-color: blueviolet;
+}
+nav .child button:active{
+    background-color: re;
+}
+/* changes for a button */
+nav .child button{
+    color: white;
+    height:32px;
+    width: 50;
+    font-size:8px;
+    background-color: blue;
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 50ppx 30px;
+    font-weight: bolder;
+
+   
+}
+a{
     text-decoration: none;
     color: black;
     font-family:'arial';
-    font-weight: bold ;
-    font-size: small;
+    font-weight: bolder ;
+    font-size: 12px;
 }
