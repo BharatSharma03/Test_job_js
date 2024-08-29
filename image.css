@@ -62,3 +62,43 @@ a{
     font-weight: bolder ;
     font-size: 12px;
 }
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$................................................................$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+/* STARTING WITH A MAIN TAG */
+/* JAI MATA DI  */
+
+.image{
+   
+    background-image: url('Mask\ Group\ 3.png');
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.image{
+    padding:27px 60px;
+    height: 430px;
+    width: 1150px;
+}
+
+
+p{
+    color: white;
+    font-size: 18px;
+    font-family: Helvetica Neue,medium;
+    margin-bottom: 10px;
+}
+h1{
+    padding-left: -100px;
+    padding-left: -30px;
+    color: rgb(243, 248, 252);
+    font-family: Helvetica Neue, Bold;
+    font-size: 52px;
+    margin-bottom:0px;
+}
+
+.absolute{
+    font-size: 18px;
+    font-style: bolder;
+    font-family: Helvetica Neue, Bold;
+    top
+}
