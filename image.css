@@ -77,7 +77,7 @@ a{
 .image{
     padding:27px 60px;
     height: 430px;
-    width: 1150px;
+    width: 1130px;
 }
 
 
@@ -87,18 +87,111 @@ p{
     font-family: Helvetica Neue,medium;
     margin-bottom: 10px;
 }
-h1{
+ .image h1{
     padding-left: -100px;
     padding-left: -30px;
     color: rgb(243, 248, 252);
-    font-family: Helvetica Neue, Bold;
+    font-family: 'Times New Roman';
     font-size: 52px;
     margin-bottom:0px;
 }
-
+/* use  position absolute for a corner  */
 .absolute{
-    font-size: 18px;
-    font-style: bolder;
+    position: absolute;
+    top:490px;
+    right:20px;
+    width: 1000; 
+}
+.absolute{
     font-family: Helvetica Neue, Bold;
-    top
+    font-size:18px ; 
+    font-weight:bolder;
+    color: white;
+    text-align: right;
+    line-height:0.1;
+    
+}
+.absolute H5{
+    text-align: left;
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+/* article section  */
+
+.section{
+    position: absolute;
+    top: 600px;
+    left: 10px;
+    width: 50;
+}
+.section h4{
+    color:blue;
+    margin: 20px 0px 0px 27px ;
+}
+.section p{
+    color: black;
+    margin: 20px 0px 0px 22px ;
+    font-size:40px;
+    padding-right: 20px;
+
+}
+.article p{
+    font-size:16px;
+    text-align: left;
+    word-spacing:6px;
+    
+}
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  */
+/* aside section  */
+.aside{
+    position: absolute;
+    border: 2px solid #00000029;
+    background-color: #00000029;
+    border-radius: 4px;
+    border-style: inline;
+    width: 400px;
+    top: 800px;
+    right:30px;
+}
+.aside p{
+    color: black;
+    font-size: 30px;
+    font-family:Helvetica Neue, Regular;
+    font-weight: bold;
+    padding-left: 25px;
+
+}
+ul.color{
+    list-style-type: disc;
+    padding-left: 35px;
+}
+ul.color li::marker{
+    color: blue;
+}
+
+/* ####################################################################### */
+/* buttton for a contact */
+.button {
+    position: absolute;
+    width: 100px;
+    top: 1270px;
+    right: 230px;
+    
+
+}
+button:hover{
+    color:white;
+    background-color: purple;
+}
+button:active{
+    background-color: red;
+    color: white;
+}
+button{
+    color:aliceblue;
+    background-color: blue;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    border-radius:9px;
 }
