@@ -1,0 +1,104 @@
+@import url('../fonts/indexfont.css');
+.container {
+    width: 1100; 
+    padding: 0px;
+    margin: 28px; 
+    height: auto; 
+}
+
+img {
+    width:50px;
+}
+    
+
+
+nav .navigation_item {
+    list-style-type: none;
+    display: flex;
+    gap: 20px; 
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navigation_item li {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'myfont'; 
+    font-size: 12px;
+    color: black;
+}
+
+.navigation_item button {
+    color: white;
+    height:35px;
+    width:135px;
+    font-size:12px;
+    background-color: #0076FF;
+    border: 1px solid #0076FF;
+    border-radius: 10px;
+    padding: 0x 30px;
+    font-family: 'myfont-bold';
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+nav .navigation_item a:hover {
+    color: blue; 
+}
+nav .navigation_item a:active {
+    color: red;}
+    
+nav .navigation_item button:hover{
+        background-color: violet;
+}
+nav .navigation_item button:active{
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+/* footer of a 4th page  */
+.image_3{
+    border: 2px solid #0076FF;
+    background-color: #0076FF;
+    margin-top: 35px;
+    width: 1180;
+    height: 140px;
+    padding-top: 120px;
+   
+}
+.bottom_logo{
+    
+    position: absolute;
+    background-image: url('../images/logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: contain;
+    top: 1460px;
+    width: 200px;
+    height: 140px;
+    left: 513px; 
+
+} 
+.bottom_logo p{
+    color: white;
+    font-family: 'Kano';
+    padding-top: 120px;
+    padding-left: 15px;
+    font-size: 16px;
+}

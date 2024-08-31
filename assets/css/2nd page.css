@@ -157,6 +157,13 @@ nav .navigation_item button:active{
     font-size: 16px;
     text-align: justify;
 }
+.section3 ul , .section4 ul{
+    color: #333232;
+    font-family: 'myfont';
+    font-size: 16px;
+    text-align: justify;
+}
+
 .section3
     ul.color{
         list-style-type: disc;
