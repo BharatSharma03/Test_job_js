@@ -1,0 +1,233 @@
+@import url('../fonts/indexfont.css');
+.container {
+    width: 1100; 
+    padding: 0px;
+    margin: 28px; 
+    height: auto; 
+}
+
+img {
+    width:50px;
+}
+    
+
+
+nav .navigation_item {
+    list-style-type: none;
+    display: flex;
+    gap: 20px; 
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navigation_item li {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'myfont'; 
+    font-size: 12px;
+    color: black;
+}
+
+.navigation_item button {
+    color: white;
+    height:35px;
+    width:135px;
+    font-size:12px;
+    background-color: #0076FF;
+    border: 1px solid #0076FF;
+    border-radius: 10px;
+    padding: 0x 30px;
+    font-family: 'myfont-bold';
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+/* 
+@media (max-width: 1920px) {
+    .container {
+        width: calc(100% - 70px); /* Fit container to viewport width minus 35px margin on each side */
+        /* margin: 35px; /* 35px margin on all sides */
+    /* }
+} */ 
+
+/* section and main page is start  */
+
+
+/* hover for a list items and button  */
+nav .navigation_item a:hover {
+    color: blue; 
+}
+nav .navigation_item a:active {
+    color: red;}
+    
+nav .navigation_item button:hover{
+        background-color: violet;
+}
+nav .navigation_item button:active{
+    background-color: red;
+}
+/* code for a section  */
+#section1{
+    background-image: url('../images/Mask\ Group\ 1.png');
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 520px;
+    width: 1250px;
+}
+.bg_container{
+    position: absolute;
+    left: 162px;
+    top: 320px;
+    width:auto;
+    height: auto;
+}
+.bg_container p{
+    
+    color: #333232; 
+    font-family: 'myfont-medium';
+    font-size: 20px;
+
+}  
+.bg_banner1 h1{
+
+    color:#333232;
+    font-size:52px;
+    font-family: 'myfont-bold';
+}
+.bg_banner1{
+    position: absolute;
+    left: 160px;
+    top: 320px;
+    width:auto;
+    height: auto;
+   
+}
+/* code for another section below images  */
+.heading{
+    color: #333232;
+    font-size: 34px;
+    font-family: 'myfont-bold-italic';
+    text-align: center;
+}
+
+/* 3rd section elements */
+
+.container2 {
+    display: flex; 
+    justify-content: space-between; 
+    width: 1185px; 
+    padding: 0px;
+    margin: 28px; 
+
+
+}
+
+.section3, .section4 {
+    flex: 1;
+    padding: 60px;
+    margin-bottom: 20px;
+    border: 2px solid #00000029;
+    background-color: #00000029;
+    box-sizing: border-box; 
+    border-radius: 8px;
+    max-width: 48%; 
+    border-style: inline;
+}
+
+.section3 h1, .section4 h1 {
+    color: #0076FF;
+    font-size: 34px;
+    font-family: 'myfont-bold';
+}
+
+.section3 p, .section4 p {
+    color: #333232;
+    font-family: 'myfont';
+    font-size: 16px;
+    text-align: justify;
+}
+.section3
+    ul.color{
+        list-style-type: disc;
+        padding-left: 35px;
+    }
+.section3 li::marker{
+        color: blue;
+    
+    }
+.section4
+    ul.color{
+        list-style-type: disc;
+        padding-left: 35px;
+    }
+.section4 li::marker{
+        color: blue;
+    
+    }
+/* button adjustment  */
+.button2{
+    padding-top: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.button2 button{
+    color: white;
+    height:47px;
+    width:180px;
+    font-size:12px;
+    background-color: #0076FF;
+    border: 1px solid #0076FF;
+    border-radius: 10px;
+    font-family: 'myfont-bold';
+
+}
+.button2 button:hover{
+    background-color:violet;
+}
+.button2 button:active{
+    background-color:red;
+}
+
+/* footer of a 2nd page  */
+.image_3{
+    border: 2px solid #0076FF;
+    background-color: #0076FF;
+    margin-top: 35px;
+    width: 1180;
+    height: 140px;
+    padding-top: 120px;
+   
+}
+.bottom_logo{
+    
+    position: absolute;
+    background-image: url('../images/logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: contain;
+    top: 1460px;
+    width: 200px;
+    height: 140px;
+    left: 513px; 
+
+} 
+.bottom_logo p{
+    color: white;
+    font-family: 'Kano';
+    padding-top: 120px;
+    padding-left: 15px;
+    font-size: 16px;
+}

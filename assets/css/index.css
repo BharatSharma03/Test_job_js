@@ -1,0 +1,287 @@
+@import url('../fonts/indexfont.css');
+/* resize the main logo  */
+.container {
+    width: 1100; 
+    padding: 0px;
+    margin: 28px; 
+    height: auto; 
+  
+}
+
+img {
+    width:50px;
+}
+    
+
+
+nav .navigation_item {
+    list-style-type: none;
+    display: flex;
+    gap: 20px; 
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navigation_item li {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'myfont'; 
+    font-size: 12px;
+    color: black;
+}
+
+.navigation_item button {
+    color: white;
+    height:35px;
+    width:135px;
+    font-size:12px;
+    background-color: #0076FF;
+    border: 1px solid #0076FF;
+    border-radius: 10px;
+    padding: 0x 30px;
+    font-family: 'myfont-bold';
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+/* 
+@media (max-width: 1920px) {
+    .container {
+        width: calc(100% - 70px); /* Fit container to viewport width minus 35px margin on each side */
+        /* margin: 35px; /* 35px margin on all sides */
+    /* }
+} */ 
+
+/* section and main page is start  */
+
+
+/* hover for a list items and button  */
+nav .navigation_item a:hover {
+    color: blue; 
+}
+nav .navigation_item a:active {
+    color: red;}
+    
+nav .navigation_item button:hover{
+        background-color: violet;
+}
+nav .navigation_item button:active{
+    background-color: red;
+}
+    
+.bg_banner{
+       
+    background-image: url('../images/Mask\ Group\ 3.png');
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.bg_banner{
+    
+    height: 480px;
+    width: 1250px;
+   
+}
+    
+    
+.bg_banner p{
+    color: white;
+    font-size: 20px;
+    font-family: 'myfont-medium';
+    margin-bottom: 10px;
+
+}
+ .bg_banner h1{
+        padding-left: -100px;
+        padding-left: -30px;
+        color: rgb(243, 248, 252);
+        font-family:'myfont-bold';
+        font-size: 52px;
+        margin-bottom:0px;
+    }
+/* container for banner */
+.container_banner{
+
+    margin:0px;
+    padding: 40px 30px;
+}
+
+    /* use  position absolute for a corner  */
+    .absolute_ppty{
+        position: absolute;
+        top:520px;
+        right:30px;
+        width: 1000; 
+    }
+    .absolute_ppty p{
+        font-family: 'myfont-bold';
+        font-size:18px ; 
+        color: white;
+        text-align: right;
+        line-height:0.1;
+        
+    }
+    .absolute_ppty H5{
+        font-size:18px ; 
+        color: white;
+        text-align: right;
+        line-height:0.1;
+        text-align: left;
+        font-family: 'myfont-medium';
+    }
+    
+    /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+    /* article section  */
+    /* container for a section  */
+    .container_section{
+        margin:0px;
+        padding-top: 20px;
+    }
+    .section{
+        position: absolute;
+        top: 600px;
+        left: 10px;
+        width: 50;
+    }
+    .section h4{
+        color:#0076FF;
+        font-size: 20px;
+        margin: 20px 0px 0px 27px ;
+        font-family: 'myfont-medium';
+    }
+    .section p{
+        color: #333232;
+        margin: 20px 0px 0px 22px ;
+        font-size:40px;
+        padding-right: 20px;
+        font-family: 'myfont-medium';
+    
+    }
+    .article p{
+        font-size:16px;
+        text-align: left;
+        word-spacing:6px;
+        font-family: 'myfont';
+        
+    }
+    /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  */
+    /* aside section  */
+    .aside{
+        position: absolute;
+        border: 2px solid #00000029;
+        background-color: #00000029;
+        border-radius: 4px;
+        border-style: inline;
+        width: 400px;
+        top: 800px;
+        right:43px;
+    }
+    .aside p{
+        color: #333232;
+        font-size: 30px;
+        font-family:'myfont';
+
+        padding-left: 25px;
+    
+    }
+    ul.color{
+        list-style-type: disc;
+        padding-left: 35px;
+    }
+    ul.color li::marker{
+        color: blue;
+    
+    }
+    
+    /* ####################################################################### */
+    /* buttton for a contact */
+    .button {
+        position: absolute;
+        width: 100px;
+        top: 1270px;
+        right: 230px;
+        
+    
+    }
+    button:hover{
+        color:white;
+        background-color: violet;
+    }
+    button:active{
+        background-color: red;
+        color: white;
+    }
+    button{
+        color:aliceblue;
+        background-color: #0076FF;
+        cursor: pointer;
+        width: 200px;
+        height: 50px;
+        font-family: Helvetica Neue, Bold;
+        border-radius:9px;
+    }
+    .banner_2{
+        background-image: url('../images/mask\ 2.png');
+        width:1170 ;
+        height: 440;
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        margin-top: 910px;
+        padding:260px 60px;
+    }
+    
+    .absolute_1{
+        position: absolute;
+        
+        right: 70px;
+        color: white;
+        width: 700;
+        top:1425px;
+    
+    }
+    .absolute_1 p{
+        font-size: 38px;
+        font-family: Helvetica Neue, Bold;
+        }
+    .image_3{
+        border: 2px solid #0076FF;
+        background-color: #0076FF;
+        margin-top: 35px;
+        width: 1180;
+        height: 140px;
+        padding-top: 120px;
+       
+    }
+    .bottom_logo{
+        
+        position: absolute;
+        background-image: url('../images/logo.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: contain;
+        top: 2145px;
+        width: 200px;
+        height: 140px;
+        left: 513px; 
+    
+    } 
+    .bottom_logo p{
+        color: white;
+        font-family: 'Kano';
+        padding-top: 120px;
+        padding-left: 15px;
+        font-size: 16px;
+    }

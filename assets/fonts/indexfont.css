@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'myfont';
+    src: url('./HandveticaNeueRegularTrial.ttf');
+    font-weight: normal; /* Optional if normal is the default */
+    font-style: normal;  /* Optional if normal is the default */
+}
+
+@font-face {
+    font-family: 'myfont-bold';
+    src: url('./HelveticaNeueBold.otf'); 
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'myfont-medium';
+    src: url('./HelveticaNeueMedium.otf');
+    font-weight: 500; /* Medium weight */
+    font-style: normal;
+}
+@font-face {
+    font-family: 'kano';
+    src: url('./Kano.otf');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'myfont-bold-italic';
+    src: url('./HelveticaNeueBoldItalic.otf');
+    font-weight: bold;
+    font-style: italic;
+}
+
