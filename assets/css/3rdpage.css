@@ -4,6 +4,7 @@
     padding: 0px;
     margin: 28px; 
     height: auto; 
+    
 }
 
 img {
@@ -51,6 +52,18 @@ header {
     justify-content: space-between;
     align-items:center;
 }
+/* 
+@media (max-width: 1920px) {
+    .container {
+        width: calc(100% - 70px); /* Fit container to viewport width minus 35px margin on each side */
+        /* margin: 35px; /* 35px margin on all sides */
+    /* }
+} */ 
+
+/* section and main page is start  */
+
+
+/* hover for a list items and button  */
 nav .navigation_item a:hover {
     color: blue; 
 }
@@ -65,7 +78,59 @@ nav .navigation_item button:active{
 }
 
 
+/* section of a 3rd page */
+.section1{
+    background-image: url('../images/3rdpage.png');
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 520px;
+    width: 1250px;
+}
+.section1{
+    color: #333232;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'myfont-bold';
+    font-size: 52px;
+    
+}
 
+/* section2 contents  */
+
+.section2{
+   
+    width:900px;
+    padding: 0px;
+    height:auto;right: 10px;
+    margin:0 auto;
+    color:#333232 ;
+    text-align: center; 
+    font-size: 30px;
+    font-family: 'myfont-bold';
+}
+/* set a container  */
+.container2{
+    width: 800px;
+
+    margin: 0 auto;
+}
+.container2 p{
+    font-size: 16px;
+    font-family: 'myfont-italic';
+    text-align: left;
+    word-spacing: 4px;
+    
+}
+.container2 h3{
+    font-size: 20px;
+    color: #0076FF;
+    font-family:'myfont';
+    text-align: right;
+}
 
 
 

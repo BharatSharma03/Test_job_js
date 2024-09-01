@@ -63,8 +63,38 @@ nav .navigation_item button:hover{
 nav .navigation_item button:active{
     background-color: red;
 }
+ /* image section  */
+ .page4{
+    background-image: url('../images/4thpage.png');
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 520px;
+    width: 1250px;
+    right: 10px;
+}
 
-
+.heading{
+    font-size:35px;
+    font-family:'myfont-bold';
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 900px;
+    height: auto;
+    right: 20px;
+}
+.para{
+    font-size: 16px;
+    font-family: 'myfont';
+    text-align: left;
+    display: flex;
+    margin: 0 auto;
+    width: 900px;
+    height: auto;
+}
 
 
 
@@ -89,7 +119,7 @@ nav .navigation_item button:active{
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: contain;
-    top: 1460px;
+    top: 1440px;
     width: 200px;
     height: 140px;
     left: 513px; 

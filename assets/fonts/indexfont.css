@@ -30,4 +30,9 @@
     font-weight: bold;
     font-style: italic;
 }
-
+@font-face {
+    font-family: 'myfont-italic';
+    src: url('./HelveticaNeueItalic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
