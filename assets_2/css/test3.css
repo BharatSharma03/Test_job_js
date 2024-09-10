@@ -8,40 +8,45 @@ body .border{
     margin: 0 auto;
     
 }
+label{
+    font-size:22px;
+}
 /* button1 for date */
-.border button{
-    width: 500px;
-    height: 70px;
+#date1{
+    width: 400px;
+    height: 50px;
     border: 2px solid black;
     background-color: white;
     color: black;
     font-size: 22px;
     /* font-family: 'Times New Roman', Times, serif; */
 }
+#date2{
+    width: 400px;
+    height: 50px;
+    margin-top: 20px;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    font-size: 22px;
+}
 /* button2 for date */
-.button2 button{
+
+/* button3 for calculate a difference */
+#result{
     margin: 20px 0;
-    width: 500px;
-    height: 70px;
+    width: 300px;
+    height: 80px;
     border: 2px solid black;
     background-color: white;
     color: black;
 }
-
-/* button3 for calculate a difference */
-.calculate button{
-    margin: 20px 0;
-    width: 300px;
-    height: 80px;
-    /* border: 2px solid black;
-    background-color: white;
-    color: black; */
-}
 /* for output */
-.output textarea{
+.output1{
     border: 2px solid black;
     text-align: center;
     padding: 20px;
     font-size: 20px;
-    /* align-items: center; */
+    width: 400px;
+    margin:0 auto;
 }

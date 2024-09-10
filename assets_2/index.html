@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet"  href="../css/test3.css">
+    <link rel="stylesheet"  href="../assets_2/css/test3.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test job 3</title>
@@ -10,21 +10,22 @@
     
     <!-- border around buttons -->
     <div class="border">
-        <input type="date" id="date" style="display: none;">
-        <button  type="button" onclick="date">Choose Date1</button>
+         <label for="Date">Date1 : </label>
+        <input id="date1" type="date">
         <!--button 2  -->
+        
         <div class="button2">
-    
-            <button  type="button" >Choose Date2</button></div>
+            <label for="date2">Date2 : </label>
+            <input id="date2" type="date">
         <!-- button 3 -->
          <div class="calculate">
-            <button type="button">Calculate Difference</button>
+            <button id="result" type="button" >Calculate Difference</button>
          </div>
-         <div class="output">
-            <textarea rows="4" cols="50">Result</textarea>
+         <div class="output1">
+            <textare id="output" id="reul" rows="4" cols="50">Result</textarea>
          </div>
 
     </div>
-    <script src="../js/js_test_job3.js"></script>
+    <script src="../assets_2/js/js_test_job3.js"></script>
 </body>
 </html>
