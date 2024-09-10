@@ -17,3 +17,5 @@ let emplist=[{
 
 emplist.sort((a,b) => a.empId-b.empId);
 console.log(emplist);
+
+
