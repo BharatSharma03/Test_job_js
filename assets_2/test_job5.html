@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet"  href="../assets_2/css/test5.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test job5</title>
+</head>
+<body>
+    <form   name="myform" id="form"  onsubmit="return submitform()">
+        <div class="bg_border">
+            <div class="container">
+                <h1>Sample Web Form </h1><br>
+
+                <!-- for fullname -->
+                <label for="fullname" >Full Name :</label><br>
+                <input type="text" name="fname" id="name" required><b><span id="name_err"></span></b><br><br>
+                 
+                <!-- for email-->
+                <label for="email" >Email :</label><br>
+                <input type="text" name="fmail" id="fmail" required><br>
+                <b><span id="email_err"></span></b><br>
+
+                <!-- for phone number -->
+                <label for="Phone Number">Phone Number :</label><br>
+                <input type="number" value="Enter your phone number" id="phone" required>
+                <b><span id="phone_err"></span></b><br><br>
+
+                <!-- for password -->
+                <label for="Password">Password :</label><br>
+                <input type="password" id="pwd" required>
+                <b><span id="pass_err"></span></b><br><br>
+
+                <!-- gender -->
+                <label for="Gender">Gender :</label><br><br>
+                <label for="Gender">Male :</label><br>
+                <input class="gender" name="gender" type="radio" value="male"><br>
+                
+                <label for="Gender">Female :</label><br>
+                <input class="gender" name="gender" type="radio"  value="female"><br>
+
+                <label for="other">Other :</label><br>
+                <input class="gender" name="gender" type="radio" value="other"><br>
+                <b><span id="gender_err"></span></b><br><br> 
+
+                <!-- favorite color -->
+               <label for="Favourite color">Favourite Color :</label><br> 
+                <select  class="dropdown" id="colors" value="select your favourite color" >
+                    <option value="">Select your favorite color</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="yellow">Yellow</option>
+                </select><br><br>
+                <b><span id="color_err"></span></b><br><br> 
+
+                <!-- reume -->
+
+                <label for="resume">Upload Resume :</label><br><br>
+                <div class="resum_border"> 
+                    <input type="file" id="resume" name="file" ><br></div><br> <b><span id="file_err"></span></b>
+                    
+                    
+                    <!--terms and condition  -->
+                    
+                <input type="checkbox" name="terms and condition" id="box" >
+               <label for="terms and condition">I agree to the terms and condition</label><br>
+               <b><span id="terms_err"></span></b>
+
+               <input id="bton" type="submit" value="Submit">
+            </div>
+        </div>
+    </form>
+    
+    <script src="../assets_2/js/js_test_job5.js"></script>
+</body>
+</html>
