@@ -212,7 +212,6 @@ function submitform() {
 
 
     // Validate terms and conditions checkbox
-
     
     const combobox = document.getElementById('box').checked;
     let boxError = document.getElementById('terms_err');
