@@ -33,14 +33,34 @@ function submitform() {
     let isValid = true;
 
     // Validate name
-    if (name.length < 4 || /\d/.test(name)) {
-        nameErrors.textContent = "*Full Name must be at least 4 characters and should not contain numbers.";
-        isValid = false;
+    for(let i=0;i<name.length;i++){
+        if (name.length < 4 || !isNaN(name[i])) {
+            nameErrors.textContent = "*Full Name must be at least 4 characters and should not contain numbers.";
+            isValid = false;
+        }
     }
 
     // Validate email
-    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    if (!emailPattern.test(email)) {
+    let at_the_rate=0;
+    let dot=false;
+    for(let i=0;i<email.length;i++){
+        if(email[i]==='@' ){
+            at_the_rate++;
+        }
+        if(i===0 || i===email.length-1){
+            if (email[i]=='@' || email[i]=='.') {
+                isValid=false;
+            }
+            
+        }
+
+        if(at_the_rate==1 && email[i]=='.' && i>0){
+            dot=true;
+        }
+        
+
+    }
+    if (at_the_rate !==1 || dot<1) {
         emailError.textContent = "*Please enter a valid email address.";
         isValid = false;
     }
@@ -52,8 +72,30 @@ function submitform() {
     }
 
     // Validate password
-    const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
-    if (!passwordPattern.test(pwd)) {
+    let upper=0;
+    let lower=0;
+    let letterup=false;
+    if(pwd.length>=8){
+        for(let i=0;i<pwd.length;i++){
+            if((pwd[i] >= 'A' && pwd[i] <= 'Z')){
+                upper++;
+                if(upper>2){
+                    letterup=false;
+                    break;
+                }
+            }
+            else if((pwd[i] >= 'a' && pwd[i] <= 'z')){
+                lower++;
+                if(lower>2){
+                    letterup=false;
+                    break;
+                }
+
+        
+        }
+    }
+    } 
+    if (upper !==1 && lower !==1){
         passError.textContent = "*Password must be at least 8 characters and contain an uppercase letter, a lowercase letter, and a number.";
         isValid = false;
     }
