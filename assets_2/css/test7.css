@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding:0;
+}
+.container{
+    width:700px;
+    height:80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 2px solid red; */
+    box-sizing: border-box;
+    /* align-items: center; */
+    
+    
+}
+.image{
+    margin: 0;
+    padding: 0;
+    width:100%; 
+    height:400px;
+    display: flex;
+    overflow: hidden;
+    
+}
+
+a{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+.nav{
+    margin:20px;
+    display: flex; 
+    /* align-items: center;
+    justify-content: center;  */
+    gap: 230px;
+} 
+a:hover{
+    color: black;
+    font-weight:bolder;
+    text-decoration: underline;
+}
