@@ -8,27 +8,23 @@
 </head>
 <body>
     <div class="container">
-        <div class="image">
-            <div class="slide"><img src="https://picsum.photos/id/237/700/400" alt="image"></div>
-            <div class="slide"><img src="https://picsum.photos/id/220/700/400" alt="image"></div>
-            <div class="slide"><img src="https://picsum.photos/id/221/700/400" alt="image"></div>
-            <div class="slide"><img src="https://picsum.photos/id/223/700/400" alt="image"></div>
-            <div class="slide"><img src="https://picsum.photos/id/233/700/400" alt="image"></div>
+        <div class="image" id="img">
             
         </div>
 
         <div class="nav">
-            <div class="pre"><a href="#Prev"> Prev </a></div>
-            <div class="num_nav"><a href="#1" onclick="hello()"> 1 </a>
-                <a href="#2"> 2 </a>
-                <a href="#3"> 3 </a>
-                <a href="#4"> 4 </a>
-                <a href="#5"> 5 </a></div>
-            <div class="next"><a href="#next"> Next </a></div>
+            <div class="pre"><a href="#Prev" onclick="pre()">Prev</a></div>
+            <div class="num_nav">
+                <a href="#1" onclick="hello(1)">1</a>
+                <a href="#2" onclick="hello(2)">2</a>
+                <a href="#3" onclick="hello(3)">3</a>
+                <a href="#4" onclick="hello(4)">4</a>
+                <a href="#5" onclick="hello(5)">5</a>
+            </div>
+            <div class="next"><a href="#Next" onclick="next()">Next</a></div>
         </div>
-        
-        
     </div>
+    
     <script src="../assets_2/js/js_test_job7.js"></script>
 </body>
 </html>
