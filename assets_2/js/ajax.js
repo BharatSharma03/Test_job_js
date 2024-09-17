@@ -1,45 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const view_button1 = document.getElementById('vieww1');
-    const view_button2 = document.getElementById('vieww2');
-    const view_button3 = document.getElementById('vieww3');
-    const view_button4 = document.getElementById('vieww4');
-    const view_button5 = document.getElementById('vieww5');
+    const view_buttons = [1, 2, 3, 4, 5].map(id => document.getElementById(`vieww${id}`));
     const close_button = document.getElementById('closee');
     const overlay = document.getElementById('overlay');
     const popup = document.getElementById('popup');
 
-  
-
-    function view1() {
+    function view(employeeId) {
         popup.classList.add('active');
         overlay.classList.add('active');
-        loadEmployeeData();
+        loadEmployeeData(employeeId);
     }
-
-    function view2() {
-        popup.classList.add('active');
-        overlay.classList.add('active');
-        loadEmployeeData();
-    }
-    
-    function view3() {
-        popup.classList.add('active');
-        overlay.classList.add('active');
-        loadEmployeeData();
-    }
-    function view4() {
-        popup.classList.add('active');
-        overlay.classList.add('active');
-        loadEmployeeData();
-    }
-
-    function view5() {
-        popup.classList.add('active');
-        overlay.classList.add('active');
-        loadEmployeeData();
-    }
-    
-    
 
     function close() {
         popup.classList.remove('active');
@@ -50,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         close();
     }
 
-    function loadEmployeeData() {
+    function loadEmployeeData(employeeId) {
         const xhttp = new XMLHttpRequest();
         xhttp.open('GET', 'https://dummy.restapiexample.com/api/v1/employees', true);
 
@@ -63,13 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     let items = objj.data;
                     let str = "";
                     for (let i = 0; i < items.length; i++) {
-                        if (items[i].id === 1 ){//|| items[i].id === 2 || items[i].id === 3 || items[i].id === 4 || items[i].id === 5) {
+                        if (items[i].id === employeeId) {
                             str += `Employee_id :- ${items[i].id}` + "<br>";
                             str += `Employee_name :- ${items[i].employee_name}` + "<br>";
                             str += `Employee_salary :- ${items[i].employee_salary}` + "<br>";
                             str += `Employee_age :- ${items[i].employee_age}` + "<br>";
                             str += "<br>";
-                            
                         }
                     }
                     document.getElementById('contain').innerHTML = str;
@@ -82,21 +50,12 @@ document.addEventListener('DOMContentLoaded', () => {
         xhttp.send();
     }
 
-    if (view_button1) {
-        view_button1.addEventListener('click', view1);
-    }
-    if (view_button2) {
-        view_button2.addEventListener('click', view2);
-    }
-    if (view_button3) {
-        view_button3.addEventListener('click', view3);
-    }
-    if (view_button4) {
-        view_button4.addEventListener('click', view4);
-    }
-    if (view_button5) {
-        view_button5.addEventListener('click', view5);
-    }
+    view_buttons.forEach((button, index) => {
+        if (button) {
+            button.addEventListener('click', () => view(index + 1));
+        }
+    });
+
     if (close_button) {
         close_button.addEventListener('click', close);
     }
@@ -104,6 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
         overlay.addEventListener('click', handleOverlayClick);
     }
 });
+
 
 
 
