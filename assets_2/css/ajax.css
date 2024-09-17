@@ -1,0 +1,104 @@
+table,th,td{
+    border: 2px solid black;
+    border-radius: 10px;
+    border-collapse: collapse;
+    width: 800px;
+    max-width: 100%;
+    margin: 20px auto;
+    font-size: 20px;
+    padding: 10px;
+    align-items: center;
+}
+th{
+    font-weight: bolder;
+    font-size: 25px;
+    background-color: red;
+
+}
+td{
+    background-color: aqua;
+    color:black;
+}
+td, th {
+        text-align: center;
+}
+
+#vieww1 ,#vieww2,#vieww3,#vieww4,#vieww5{
+    width:120px;
+    height:50px;
+    right: 10px;
+    border:none;
+    outline: none;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor:pointer;
+}
+
+
+
+
+/*  for a pop up */
+.popup {
+    border: 2px solid black;
+    width: 500px;
+    max-width: 80%;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%) scale(0);
+    transition:200ms ease-in-out ;
+    background-color: white;
+    color: black;
+    height: auto;
+    margin: 0;
+    z-index: 1;
+    box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.popup.active{
+    transform: translate(-50%, -50%) scale(1);
+
+}
+
+.header {
+    padding: 10px;
+    display: flex;
+    font-size: 30px;
+    font-weight: bolder;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+.close {
+    background: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition:200ms ease-in-out ;
+    pointer-events: none; 
+    opacity: 1; 
+    transition: opacity 0.3s;
+}
+
+#overlay.active {
+    opacity:1; 
+    pointer-events: all; 
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.active{
+    display: block;
+}

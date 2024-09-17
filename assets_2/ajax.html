@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/ajax.css"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ajax</title>
+</head>
+<body>
+    <div class="table_data">
+        <table>
+            <tr>
+                <th>id</th>
+                <th>Employee_name</th>
+                <th>Employee_salary</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Tiger Nixon</td>
+                <td>320800</td>
+                <td><button id="vieww1">View</button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Garret Winters</td>
+                <td>170750</td>
+                <td><button id="vieww2">View</button></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Ashton Cox</td>
+                <td>86000</td>
+                <td><button id="vieww3">View</button></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Cedric Kelly</td>
+                <td>433060</td>
+                <td><button id="vieww4">View</button></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Airi Satou</td>
+                <td>162700</td>
+                <td><button id="vieww5">View</button></td>
+            </tr>
+
+        </table>
+    </div>
+
+
+     <!--  code for a pop and view button -->
+    
+    <div id="popup" class="popup"> 
+        <div class="header">employess name 
+            <button id="closee" class="close">&times;</button>
+        </div>
+        <div class="container" id="contain"></div>
+    </div>
+    <div id="overlay"></div>
+    <script src="js/ajax.js"></script>
+</body>
+</html>
